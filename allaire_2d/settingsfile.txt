@@ -1,0 +1,10 @@
+Nx 3072
+Ny 6144
+CFL 0.5
+splitting_scheme naive_splitting
+test_case totem_pole_3
+output_freq 40
+outputpath ./output/
+flux_solver MUSCL
+riemann_solver HLLC
+problem euler
