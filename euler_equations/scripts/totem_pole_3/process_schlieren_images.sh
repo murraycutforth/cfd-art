@@ -26,7 +26,7 @@ for dat_file in ./../../euler_simulation_code/output/*schlieren*.dat; do
     epstopdf "${out_dir}/${out_file}.eps" --output="${out_dir}/pdfs/${out_file}.pdf"
     echo "Converted to pdf"
 
-    convert -density 100 "${out_dir}/pdfs/${out_file}.pdf" -quality 100 "${out_dir}/pngs/${out_file}.png"
+    convert -density 200 "${out_dir}/pdfs/${out_file}.pdf" -quality 100 "${out_dir}/pngs/${out_file}.png"
     echo "Converted to png"
     
     # Delete the EPS plot
